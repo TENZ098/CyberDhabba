@@ -1,0 +1,250 @@
+
+/* =========================
+   MEALS PAGE
+========================= */
+
+.meals-page {
+  padding: 50px 8% 80px;
+  min-height: 80vh;
+  background-color: #faf8f2;
+}
+
+/* Heading */
+
+.meals-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.meals-header h1 {
+  color: #163c2c;
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.meals-header > p:last-child {
+  color: #666666;
+  font-size: 16px;
+}
+
+/* Search */
+
+.meals-search {
+  max-width: 600px;
+  margin: 0 auto 25px;
+}
+
+.meals-search input {
+  width: 100%;
+  padding: 15px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  background-color: #ffffff;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.meals-search input:focus {
+  border-color: #163c2c;
+  box-shadow: 0 0 0 3px rgba(22, 60, 44, 0.1);
+}
+
+/* Category Filters */
+
+.category-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.category-btn {
+  border: 1px solid #d6d6d6;
+  background-color: #ffffff;
+  color: #333333;
+  padding: 10px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.category-btn:hover {
+  border-color: #163c2c;
+  color: #163c2c;
+}
+
+.category-btn.active {
+  background-color: #163c2c;
+  color: #ffffff;
+  border-color: #163c2c;
+}
+
+/* Results Count */
+
+.results-count {
+  color: #777777;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Meals Grid */
+
+.meals-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* Meal Card */
+
+.meal-card {
+  background-color: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.meal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.meal-image {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3ead5;
+  font-size: 90px;
+}
+
+.meal-content {
+  padding: 22px;
+}
+
+/* Tags */
+
+.meal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.meal-category,
+.meal-type {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.meal-category {
+  background-color: #fff1cf;
+  color: #946116;
+}
+
+.meal-type {
+  background-color: #e7f1e9;
+  color: #28633e;
+}
+
+/* Meal Details */
+
+.meal-content h3 {
+  color: #163c2c;
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.meal-description {
+  color: #666666;
+  font-size: 14px;
+  line-height: 1.7;
+  min-height: 70px;
+}
+
+.meal-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #eeeeee;
+}
+
+/* Empty Results */
+
+.no-meals {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.no-meals span {
+  font-size: 50px;
+}
+
+.no-meals h3 {
+  color: #163c2c;
+  margin: 15px 0 10px;
+}
+
+.no-meals p {
+  color: #777777;
+  margin-bottom: 20px;
+}
+
+.no-meals button {
+  padding: 11px 20px;
+  border: none;
+  border-radius: 7px;
+  background-color: #163c2c;
+  color: white;
+  cursor: pointer;
+}
+
+.no-meals button:hover {
+  background-color: #c17b20;
+}
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+  .meals-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .meals-page {
+    padding: 40px 5% 60px;
+  }
+
+  .meals-header h1 {
+    font-size: 34px;
+  }
+
+  .meals-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .meal-image {
+    height: 180px;
+  }
+
+  .category-filters {
+    gap: 8px;
+  }
+
+  .category-btn {
+    padding: 9px 13px;
+    font-size: 13px;
+  }
+}

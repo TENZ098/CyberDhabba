@@ -1,0 +1,312 @@
+
+/* =========================
+   CHECKOUT PAGE
+========================= */
+
+.checkout-page {
+  padding: 50px 8% 80px;
+  background-color: #faf8f2;
+  min-height: 80vh;
+}
+
+/* Heading */
+
+.checkout-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.checkout-header h1 {
+  color: #163c2c;
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.checkout-header > p:last-child {
+  color: #666666;
+  font-size: 16px;
+}
+
+/* Main Layout */
+
+.checkout-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 30px;
+  align-items: start;
+}
+
+/* Form Section */
+
+.checkout-form-section,
+.order-summary {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+}
+
+.checkout-form-section h2,
+.order-summary h2 {
+  color: #163c2c;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+/* Form Groups */
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+  color: #333333;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 9px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #222222;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #163c2c;
+  box-shadow: 0 0 0 3px rgba(22, 60, 44, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  font-family: inherit;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #999999;
+}
+
+/* Error Message */
+
+.checkout-error {
+  background-color: #fff0ed;
+  color: #a33b32;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  font-size: 14px;
+}
+
+/* Place Order Button */
+
+.place-order-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #163c2c;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.place-order-btn:hover {
+  background-color: #24563f;
+  transform: translateY(-2px);
+}
+
+/* Order Summary */
+
+.order-summary {
+  position: sticky;
+  top: 100px;
+}
+
+.order-items {
+  margin-bottom: 20px;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.order-item strong {
+  display: block;
+  color: #163c2c;
+  margin-bottom: 6px;
+}
+
+.order-item span {
+  color: #888888;
+  font-size: 13px;
+}
+
+.order-item > p {
+  color: #333333;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* Empty Order */
+
+.empty-order {
+  background-color: #f5f1e7;
+  padding: 18px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.empty-order p {
+  color: #666666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Subtotal and Delivery */
+
+.summary-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid #eeeeee;
+  color: #555555;
+}
+
+.delivery-hint {
+  margin-top: 12px;
+  padding: 12px;
+  background-color: #fff1cf;
+  color: #946116;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.summary-final {
+  border-bottom: none;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #163c2c;
+}
+
+.summary-final span:last-child {
+  color: #c17b20;
+  font-size: 22px;
+}
+
+/* =========================
+   SUCCESS MESSAGE
+========================= */
+
+.order-success {
+  max-width: 650px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 45px 30px;
+  border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+}
+
+.success-icon {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7f1e9;
+  color: #28633e;
+  border-radius: 50%;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.order-success h2 {
+  color: #163c2c;
+  margin-bottom: 15px;
+}
+
+.order-success > p {
+  color: #666666;
+  line-height: 1.7;
+}
+
+.success-total {
+  margin: 25px 0;
+  padding: 20px;
+  background-color: #f5f1e7;
+  border-radius: 10px;
+}
+
+.success-total span {
+  color: #777777;
+}
+
+.success-total h3 {
+  color: #c17b20;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.success-note {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 900px) {
+  .checkout-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .order-summary {
+    position: static;
+  }
+}
+
+@media (max-width: 600px) {
+  .checkout-page {
+    padding: 40px 5% 60px;
+  }
+
+  .checkout-header h1 {
+    font-size: 33px;
+  }
+
+  .checkout-form-section,
+  .order-summary {
+    padding: 22px;
+  }
+
+  .checkout-form-section h2,
+  .order-summary h2 {
+    font-size: 21px;
+  }
+
+  .order-success {
+    padding: 30px 20px;
+  }
+}

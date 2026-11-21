@@ -3,8 +3,9 @@ import Navbar from "./components/Navbar";
 
 import Home from "./pages/Home";
 import Meals from "./pages/Meals";
-import Planner from "./pages/Planner";
+import Planner from "./pages/planner";
 import Checkout from "./pages/Checkout";
+import "./App.css";
 
 function App() {
   return (

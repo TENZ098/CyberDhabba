@@ -1,0 +1,220 @@
+
+/* =========================
+   WEEKLY PLANNER PAGE
+========================= */
+
+.planner-page {
+  padding: 50px 8% 80px;
+  background-color: #faf8f2;
+  min-height: 80vh;
+}
+
+/* Page Heading */
+
+.planner-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.planner-header h1 {
+  color: #163c2c;
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.planner-header > p:last-child {
+  color: #666666;
+  font-size: 16px;
+}
+
+/* Days Grid */
+
+.planner-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+/* Day Card */
+
+.planner-day-card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+}
+
+.planner-day-card h3 {
+  color: #163c2c;
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+/* Meal Dropdown */
+
+.planner-day-card select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #333333;
+  cursor: pointer;
+  outline: none;
+}
+
+.planner-day-card select:focus {
+  border-color: #163c2c;
+}
+
+/* Selected Meal */
+
+.selected-meal {
+  margin-top: 18px;
+  padding: 15px;
+  background-color: #f5f1e7;
+  border-radius: 9px;
+}
+
+.selected-meal p {
+  color: #163c2c;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.selected-meal strong {
+  color: #c17b20;
+  font-size: 17px;
+}
+
+.selected-meal button {
+  display: block;
+  margin-top: 12px;
+  padding: 8px 13px;
+  background-color: #ffffff;
+  color: #a33b32;
+  border: 1px solid #e0b7b2;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.selected-meal button:hover {
+  background-color: #a33b32;
+  color: #ffffff;
+}
+
+/* =========================
+   WEEKLY SUMMARY
+========================= */
+
+.planner-summary {
+  margin-top: 40px;
+  background-color: #163c2c;
+  color: #ffffff;
+  padding: 35px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.summary-info h2 {
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+.summary-info > p:last-child {
+  color: #d9e3dc;
+}
+
+.summary-info .section-label {
+  color: #f4b942;
+}
+
+.summary-total {
+  background-color: #ffffff;
+  color: #163c2c;
+  padding: 25px 30px;
+  border-radius: 12px;
+  min-width: 220px;
+}
+
+.summary-total span {
+  font-size: 14px;
+  color: #666666;
+}
+
+.summary-total h2 {
+  margin: 10px 0;
+  font-size: 30px;
+  color: #c17b20;
+}
+
+.summary-total p {
+  color: #777777;
+  font-size: 13px;
+}
+
+/* Clear Plan Button */
+
+.clear-plan-btn {
+  padding: 12px 18px;
+  background-color: transparent;
+  border: 1px solid #f4b942;
+  color: #f4b942;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.clear-plan-btn:hover {
+  background-color: #f4b942;
+  color: #163c2c;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 1000px) {
+  .planner-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .planner-summary {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 650px) {
+  .planner-page {
+    padding: 40px 5% 60px;
+  }
+
+  .planner-header h1 {
+    font-size: 32px;
+  }
+
+  .planner-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .planner-summary {
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .summary-info h2 {
+    font-size: 23px;
+  }
+
+  .summary-total {
+    width: 100%;
+  }
+
+  .clear-plan-btn {
+    width: 100%;
+  }
+}
