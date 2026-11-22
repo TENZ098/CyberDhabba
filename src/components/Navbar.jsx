@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <Link to="/" className="logo">
-        <span className="logo-icon">🍛</span>
+        <span className="logo-icon"></span>
         <span>Cyber<span className="logo-highlight">Dhabba</span></span>
       </Link>
 

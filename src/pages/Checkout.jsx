@@ -1,6 +1,11 @@
 
 import { useState } from "react";
 import meals from "../data/meals";
+import {
+  isPlanEmpty,
+  calculateDeliveryFee,
+  isPlanWithinLimit
+} from "../utils/weeklyPlanRules";
 import "./Checkout.css";
 
 function Checkout() {
@@ -54,8 +59,10 @@ function Checkout() {
     0
   );
 
-  // Business rule: free delivery on orders of Rs. 2000 or more
-  const deliveryFee = subtotal >= 2000 ? 0 : orderItems.length > 0 ? 150 : 0;
+  // Apply delivery business rule
+  const deliveryFee = isPlanEmpty(weeklyPlan)
+    ? 0
+    : calculateDeliveryFee(subtotal);
 
   const total = subtotal + deliveryFee;
 
@@ -73,10 +80,14 @@ function Checkout() {
   function handleSubmit(e) {
     e.preventDefault();
 
-    if (orderItems.length === 0) {
+    if (isPlanEmpty(weeklyPlan)) {
       setError("Please select meals in your Weekly Planner first.");
       return;
     }
+    if (!isPlanWithinLimit(weeklyPlan)) {
+  setError("Your weekly plan cannot contain more than 7 meals.");
+  return;
+}
 
     setError("");
     setOrderPlaced(true);
@@ -107,6 +118,7 @@ function Checkout() {
           <p className="success-note">
             Delivery details: {customer.address}
           </p>
+
           <p className="success-note">
             Contact: {customer.phone}
           </p>

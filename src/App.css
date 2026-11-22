@@ -1,9 +1,8 @@
-
-
 .home-page {
   width: 100%;
 }
 
+/* Hero section */
 .hero {
   display: flex;
   align-items: center;
@@ -47,6 +46,7 @@
   margin-bottom: 30px;
 }
 
+/* Hero buttons */
 .hero-buttons {
   display: flex;
   gap: 15px;
@@ -89,8 +89,7 @@
   margin-top: 25px;
 }
 
-/* Hero Food Illustration */
-
+/* Hero food image */
 .hero-food {
   flex: 1;
   display: flex;
@@ -108,11 +107,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   box-shadow: 0 15px 35px rgba(22, 60, 44, 0.12);
 }
 
-.food-circle span {
-  font-size: 170px;
+.food-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
 }
 
 .food-tag {
@@ -127,10 +131,7 @@
   font-weight: bold;
 }
 
-/* =========================
-   FEATURED MEALS
-========================= */
-
+/* Featured meals */
 .featured-section {
   padding: 70px 8%;
   background-color: #faf8f2;
@@ -159,6 +160,7 @@
   color: #c17b20;
 }
 
+/* Meal cards */
 .featured-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -178,13 +180,18 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
+/* Meal images */
 .meal-emoji {
   height: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: #f3ead5;
-  font-size: 85px;
+  overflow: hidden;
+}
+
+.meal-emoji img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .featured-card-content {
@@ -215,6 +222,7 @@
   min-height: 67px;
 }
 
+/* Meal price and button */
 .meal-card-bottom {
   display: flex;
   justify-content: space-between;
@@ -243,10 +251,7 @@
   background-color: #c17b20;
 }
 
-/* =========================
-   WEEKLY PLANNER PROMOTION
-========================= */
-
+/* Weekly planner promotion */
 .planner-promo {
   margin: 20px 8% 70px;
   padding: 50px;
@@ -292,10 +297,7 @@
   padding: 20px;
 }
 
-/* =========================
-   FOOTER
-========================= */
-
+/* Footer */
 .home-footer {
   background-color: #102c20;
   color: #ffffff;
@@ -315,10 +317,7 @@
   font-size: 14px;
 }
 
-/* =========================
-   RESPONSIVE DESIGN
-========================= */
-
+/* Tablet layout */
 @media (max-width: 1000px) {
   .hero {
     padding: 60px 6%;
@@ -333,15 +332,12 @@
     height: 250px;
   }
 
-  .food-circle span {
-    font-size: 140px;
-  }
-
   .featured-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
+/* Mobile layout */
 @media (max-width: 700px) {
   .hero {
     flex-direction: column;
@@ -374,10 +370,6 @@
   .food-circle {
     width: 230px;
     height: 230px;
-  }
-
-  .food-circle span {
-    font-size: 125px;
   }
 
   .food-tag {
@@ -421,4 +413,46 @@
     flex-direction: column;
     text-align: center;
   }
+}
+
+/* 404 Not Found Page */
+.not-found {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.not-found h1 {
+  font-size: 100px;
+  color: #f4b942;
+  margin: 0;
+}
+
+.not-found h2 {
+  font-size: 32px;
+  color: #153f2f;
+  margin: 10px 0;
+}
+
+.not-found p {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.not-found a {
+  display: inline-block;
+  background-color: #153f2f;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.not-found a:hover {
+  background-color: #215840;
 }

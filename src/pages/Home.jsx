@@ -40,11 +40,14 @@ function Home() {
 
         <div className="hero-food">
           <div className="food-circle">
-            <span>🍛</span>
-          </div>
+  <img
+    src={meals[0].image}
+    alt={meals[0].name}
+  />
+</div>
 
           <div className="food-tag">
-            <span>❤️</span> Made with desi love
+            <span></span> Made with desi love
           </div>
         </div>
       </section>
@@ -66,14 +69,8 @@ function Home() {
           {featuredMeals.map((meal) => (
             <div className="featured-card" key={meal.id}>
               <div className="meal-emoji">
-                {meal.category === "Rice"
-                  ? "🍚"
-                  : meal.category === "BBQ"
-                  ? "🍢"
-                  : meal.category === "Fast Food"
-                    ? "🍔"
-                    : "🍲"}
-              </div>
+  <img src={meal.image} alt={meal.name} />
+</div>
 
               <div className="featured-card-content">
                 <span className="popular-tag">Popular</span>
@@ -122,7 +119,7 @@ function Home() {
       {/* Footer */}
       <footer className="home-footer">
         <div>
-          <h3>🍛 CyberDhabba</h3>
+          <h3> CyberDhabba</h3>
           <p>Desi meals. Digital convenience.</p>
         </div>
 

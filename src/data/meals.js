@@ -1,3 +1,15 @@
+import chickenBiryani from "../assets/meals/chicken-biryani.jpg";
+import chickenKarahi from "../assets/meals/chicken-karahi.jpg";
+import beefPulao from "../assets/meals/beef-pulao.jpg";
+import daalChawal from "../assets/meals/daal-chawal.jpg";
+import chickenHandi from "../assets/meals/chicken-handi.jpg";
+import alooParatha from "../assets/meals/aloo-paratha.jpg";
+import chickenTikka from "../assets/meals/chicken-tikka.jpg";
+import chanaMasala from "../assets/meals/chana-masala.jpg";
+import beefSeekhKebab from "../assets/meals/beef-seekh-kebab.jpg";
+import chickenShawarma from "../assets/meals/chicken-shawarma.jpg";
+import mixVegetableCurry from "../assets/meals/mix-vegetable-curry.jpg";
+import zingerBurger from "../assets/meals/zinger-burger.jpg";
 
 const meals = [
   {
@@ -8,6 +20,7 @@ const meals = [
     category: "Rice",
     type: "Non-Veg",
     popular: true,
+    image: chickenBiryani,
   },
   {
     id: 2,
@@ -17,6 +30,7 @@ const meals = [
     category: "Curry",
     type: "Non-Veg",
     popular: true,
+    image: chickenKarahi,
   },
   {
     id: 3,
@@ -26,6 +40,7 @@ const meals = [
     category: "Rice",
     type: "Non-Veg",
     popular: false,
+    image: beefPulao,
   },
   {
     id: 4,
@@ -35,6 +50,7 @@ const meals = [
     category: "Vegetarian",
     type: "Veg",
     popular: true,
+    image: daalChawal,
   },
   {
     id: 5,
@@ -44,6 +60,7 @@ const meals = [
     category: "Curry",
     type: "Non-Veg",
     popular: true,
+    image: chickenHandi,
   },
   {
     id: 6,
@@ -53,6 +70,7 @@ const meals = [
     category: "Breakfast",
     type: "Veg",
     popular: false,
+    image: alooParatha,
   },
   {
     id: 7,
@@ -62,6 +80,7 @@ const meals = [
     category: "BBQ",
     type: "Non-Veg",
     popular: true,
+    image: chickenTikka,
   },
   {
     id: 8,
@@ -71,6 +90,7 @@ const meals = [
     category: "Vegetarian",
     type: "Veg",
     popular: false,
+    image: chanaMasala,
   },
   {
     id: 9,
@@ -80,6 +100,7 @@ const meals = [
     category: "BBQ",
     type: "Non-Veg",
     popular: false,
+    image: beefSeekhKebab,
   },
   {
     id: 10,
@@ -89,6 +110,7 @@ const meals = [
     category: "Fast Food",
     type: "Non-Veg",
     popular: false,
+    image: chickenShawarma,
   },
   {
     id: 11,
@@ -98,6 +120,7 @@ const meals = [
     category: "Vegetarian",
     type: "Veg",
     popular: false,
+    image: mixVegetableCurry,
   },
   {
     id: 12,
@@ -107,6 +130,7 @@ const meals = [
     category: "Fast Food",
     type: "Non-Veg",
     popular: true,
+    image: zingerBurger,
   },
 ];
 
