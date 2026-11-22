@@ -1,16 +1,89 @@
-# React + Vite
+# CyberDhabba 🍽️
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A React-based food ordering website where users can browse meals, search and filter dishes, create a weekly meal plan, and proceed to checkout.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Browse available meals
+- Search meals by name
+- Filter meals by category
+- View meal details and prices
+- Add meals to a weekly planner
+- Maximum of 7 meals in the weekly plan
+- Save weekly selections using LocalStorage
+- Checkout form with input validation
+- Delivery fee calculation
+- Responsive user interface
+- Custom 404 page for invalid routes
+- Fallback image for unavailable meal images
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- JavaScript
+- CSS
+- React Router
+- Node.js
+- LocalStorage
 
-## Expanding the Oxlint configuration
+## Business Rules
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- A maximum of 7 meals can be selected for the weekly plan.
+- Orders below Rs. 2,000 have a delivery fee of Rs. 150.
+- Orders of Rs. 2,000 or more receive free delivery.
+
+## Installation and Setup
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/TENZ098/CyberDhabba.git
+   ```
+
+2. Navigate into the project folder:
+
+   ```bash
+   cd CyberDhabba
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+## Testing
+
+Run the automated business-rule tests using:
+
+```bash
+node --test
+```
+
+## Project Structure
+
+```text
+CyberDhabba/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── data/
+│   ├── pages/
+│   └── utils/
+├── package.json
+├── package-lock.json
+├── README.md
+└── DECISIONS.md
+```
+
+## Repository
+
+GitHub: https://github.com/TENZ098/CyberDhabba
